@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Custom Object Table
+    a(href="/update-cobj") Add to this table
+    table
+      tr
+        th Name
+        th Channel
+        th Episodes
+      each drama in dramas
+        tr
+          td= drama.properties.name
+          td= drama.properties.channel
+          td= drama.properties.episodes

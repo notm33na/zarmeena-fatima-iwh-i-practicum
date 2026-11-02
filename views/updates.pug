@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Add a Drama
+    form(action="/update-cobj" method="POST")
+      label(for="name") Name
+      input(type="text" name="name" id="name" required)
+      label(for="channel") Channel
+      input(type="text" name="channel" id="channel")
+      label(for="episodes") Episodes
+      input(type="number" name="episodes" id="episodes")
+      button(type="submit") Submit
+    a(href="/") Return to the homepage
